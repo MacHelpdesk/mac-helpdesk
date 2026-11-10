@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Each tool is its own git repository; see scripts/clone-tools.sh
+/tools/
+
+# Editors
+.idea/
+.vscode/
+*.swp
+
+# Logs and temporary files
+*.log
+*.tmp
+*~
+
+# Per-machine session state
+.claude/.idd/tree-lock
+.remember/

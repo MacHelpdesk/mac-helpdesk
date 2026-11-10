@@ -1,0 +1,23 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "mac-helpdesk",
+  "description": "MacHelpdesk：把原本要找 IT 處理的 Mac 問題交給 agent。先量測，再判讀，最後才動手。",
+  "owner": {
+    "name": "Che Cheng"
+  },
+  "plugins": [
+    {
+      "name": "mac-printer-setup",
+      "description": "Mac 印表機連線與預設設定：印不出來時找出印表機在網路的哪一層（同網段、上層路由器、只開著 Wi-Fi Direct）並把佇列改到連得到的位址；依目前連得到哪台印表機自動切換預設印表機（launchd）。",
+      "author": {
+        "name": "Che Cheng"
+      },
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/MacHelpdesk/mac-printer-setup.git",
+        "path": "plugin"
+      },
+      "category": "productivity"
+    }
+  ]
+}
