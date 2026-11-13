@@ -11,6 +11,7 @@
 | 工具 | 做什麼 | 形式 |
 |---|---|---|
 | [`mac-printer-setup`](https://github.com/MacHelpdesk/mac-printer-setup) | 連不到網路印表機時，找出它在網路的哪一層並修好佇列；依目前連得到哪台印表機自動切換預設印表機 | Claude Code plugin、bash 腳本 |
+| [`mac-dropbox-fix`](https://github.com/MacHelpdesk/mac-dropbox-fix) | Dropbox 卡住不同步時，量測 Dropbox 與 File Provider 的狀態，對照已知問題的知識庫找出原因並處理 | Claude Code plugin、bash 腳本 |
 | [`mac-network-test`](https://github.com/MacHelpdesk/mac-network-test) | 網路瓶頸診斷：慢在 Wi-Fi、閘道還是上游；是被限速還是被塞住 | Swift CLI |
 | [`mac-trackpad-test`](https://github.com/MacHelpdesk/mac-trackpad-test) | 觸控板檢測：死區、點按、Force Touch、捲動、手勢 | Swift |
 
@@ -19,9 +20,10 @@
 ```bash
 /plugin marketplace add MacHelpdesk/mac-helpdesk
 /plugin install mac-printer-setup@mac-helpdesk
+/plugin install mac-dropbox-fix@mac-helpdesk
 ```
 
-目前透過 marketplace 安裝的只有 `mac-printer-setup`。另外兩個工具照各自 repo 的 README 編譯使用。
+目前透過 marketplace 安裝的有 `mac-printer-setup` 與 `mac-dropbox-fix`。另外兩個工具照各自 repo 的 README 編譯使用。
 
 ## 結構
 
@@ -31,6 +33,7 @@ mac-helpdesk/                          # 這個 repo
 ├── scripts/clone-tools.sh             # 把所有工具 repo clone 進 tools/
 └── tools/                             # 各工具的 repo（這個 repo 不追蹤 tools/）
     ├── mac-printer-setup/
+    ├── mac-dropbox-fix/
     ├── mac-network-test/
     └── mac-trackpad-test/
 ```

@@ -15,6 +15,7 @@ ORG="MacHelpdesk"
 # One tool per line. Add a line when a new tool repo is created.
 TOOLS="
 mac-printer-setup
+mac-dropbox-fix
 mac-network-test
 mac-trackpad-test
 "
