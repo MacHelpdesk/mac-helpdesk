@@ -11,7 +11,7 @@
 | 工具 | 做什麼 | 形式 |
 |---|---|---|
 | [`mac-printer-setup`](https://github.com/MacHelpdesk/mac-printer-setup) | 連不到網路印表機時，找出它在網路的哪一層並修好佇列；依目前連得到哪台印表機自動切換預設印表機 | Claude Code plugin、bash 腳本 |
-| [`mac-dropbox-fix`](https://github.com/MacHelpdesk/mac-dropbox-fix) | Dropbox 卡住不同步時，量測 Dropbox 與 File Provider 的狀態，對照已知問題的知識庫找出原因並處理 | Claude Code plugin、bash 腳本 |
+| [`mac-dropbox-fix`](https://github.com/MacHelpdesk/mac-dropbox-fix) | Dropbox 卡住不同步時，量測 Dropbox 與 File Provider 的狀態，對照已知問題的知識庫找出原因並處理；整理 Dropbox 資料夾裡的檔案之前，確認哪些是僅線上的、需要時先問再下載 | Claude Code plugin、bash 腳本 |
 | [`mac-network-test`](https://github.com/MacHelpdesk/mac-network-test) | 網路瓶頸診斷：慢在 Wi-Fi、閘道還是上游；是被限速還是被塞住 | Swift CLI |
 | [`mac-trackpad-test`](https://github.com/MacHelpdesk/mac-trackpad-test) | 觸控板檢測：死區、點按、Force Touch、捲動、手勢 | Swift |
 

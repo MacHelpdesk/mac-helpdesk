@@ -21,7 +21,7 @@
     },
     {
       "name": "mac-dropbox-fix",
-      "description": "Dropbox 在 Mac 上卡住不同步時，量測 Dropbox 與 macOS File Provider 的狀態，對照一份已知問題的知識庫（problems.json）找出是哪一種，再依每個解法標明的界線處理：能直接做的、要先問的、只能由使用者自己做的。知識庫可以加自己遇過的問題。",
+      "description": "Dropbox 在 Mac 上卡住不同步時，量測 Dropbox 與 macOS File Provider 的狀態，對照一份已知問題的知識庫（problems.json）找出是哪一種，再依每個解法標明的界線處理：能直接做的、要先問的、只能由使用者自己做的。知識庫可以加自己遇過的問題。整理、複製、搬移 Dropbox 資料夾裡的檔案之前，也能先確認檔案是否已在這台 Mac 上，需要時先問再下載。",
       "author": {
         "name": "Che Cheng"
       },
