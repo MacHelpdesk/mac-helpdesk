@@ -11,7 +11,7 @@
 | 工具 | 做什麼 | 形式 |
 |---|---|---|
 | [`mac-printer-setup`](https://github.com/MacHelpdesk/mac-printer-setup) | 連不到網路印表機時，找出它在網路的哪一層並修好佇列；依目前連得到哪台印表機自動切換預設印表機 | Claude Code plugin、bash 腳本 |
-| [`mac-dropbox-fix`](https://github.com/MacHelpdesk/mac-dropbox-fix) | Dropbox 卡住不同步時，量測 Dropbox 與 File Provider 的狀態，對照已知問題的知識庫找出原因並處理；整理 Dropbox 資料夾裡的檔案之前，確認哪些是僅線上的、需要時先問再下載 | Claude Code plugin、bash 腳本 |
+| [`mac-dropbox-fix`](https://github.com/MacHelpdesk/mac-dropbox-fix) | Dropbox 卡住不同步時，量測 Dropbox 與 File Provider 的狀態，對照已知問題的知識庫找出原因並處理；整理 Dropbox 資料夾裡的檔案之前，確認哪些是僅線上的、需要時先問再下載。plugin 帶兩個 hook：每則訊息與每個 Bash 指令都會啟動一支很短的腳本，在用得上時提醒 Claude 有這兩個 skill；要在 Dropbox 資料夾裡複製、搬移或打包的 Bash 指令，每個 session 第一次會先被擋下 | Claude Code plugin、bash 腳本 |
 | [`mac-timemachine-fix`](https://github.com/MacHelpdesk/mac-timemachine-fix) | 時光機一直失敗時，量測設定、本機參考快照、剩餘空間與 backupd 的 log，對照已知問題的知識庫找出原因；量出常見的可排除位置，幫你決定排除清單 | Claude Code plugin、bash 腳本 |
 | [`mac-network-test`](https://github.com/MacHelpdesk/mac-network-test) | 網路瓶頸診斷：慢在 Wi-Fi、閘道還是上游；是被限速還是被塞住 | Swift CLI |
 | [`mac-trackpad-test`](https://github.com/MacHelpdesk/mac-trackpad-test) | 觸控板檢測：死區、點按、Force Touch、捲動、手勢 | Swift |
