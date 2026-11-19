@@ -31,6 +31,19 @@
         "path": "plugin"
       },
       "category": "productivity"
+    },
+    {
+      "name": "mac-timemachine-fix",
+      "description": "時光機備份一直失敗、好幾天沒有成功時，量測時光機的設定、本機參考快照、兩邊的剩餘空間與 backupd 的 log，對照一份已知問題的知識庫（problems.json）找出原因：參考快照不見而每次整個重掃、超長路徑讓掃描失敗、複製時有檔案讀不到、磁碟快滿。再量出常見的可排除位置（快取、模型、音源庫、虛擬機、雲端資料夾的本機副本），幫使用者決定排除清單。時光機只能排除、不能只選要備份的資料夾，skill 會先說明這一點。",
+      "author": {
+        "name": "Che Cheng"
+      },
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/MacHelpdesk/mac-timemachine-fix.git",
+        "path": "plugin"
+      },
+      "category": "productivity"
     }
   ]
 }

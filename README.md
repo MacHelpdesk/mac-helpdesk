@@ -12,6 +12,7 @@
 |---|---|---|
 | [`mac-printer-setup`](https://github.com/MacHelpdesk/mac-printer-setup) | 連不到網路印表機時，找出它在網路的哪一層並修好佇列；依目前連得到哪台印表機自動切換預設印表機 | Claude Code plugin、bash 腳本 |
 | [`mac-dropbox-fix`](https://github.com/MacHelpdesk/mac-dropbox-fix) | Dropbox 卡住不同步時，量測 Dropbox 與 File Provider 的狀態，對照已知問題的知識庫找出原因並處理；整理 Dropbox 資料夾裡的檔案之前，確認哪些是僅線上的、需要時先問再下載 | Claude Code plugin、bash 腳本 |
+| [`mac-timemachine-fix`](https://github.com/MacHelpdesk/mac-timemachine-fix) | 時光機一直失敗時，量測設定、本機參考快照、剩餘空間與 backupd 的 log，對照已知問題的知識庫找出原因；量出常見的可排除位置，幫你決定排除清單 | Claude Code plugin、bash 腳本 |
 | [`mac-network-test`](https://github.com/MacHelpdesk/mac-network-test) | 網路瓶頸診斷：慢在 Wi-Fi、閘道還是上游；是被限速還是被塞住 | Swift CLI |
 | [`mac-trackpad-test`](https://github.com/MacHelpdesk/mac-trackpad-test) | 觸控板檢測：死區、點按、Force Touch、捲動、手勢 | Swift |
 
@@ -21,9 +22,10 @@
 /plugin marketplace add MacHelpdesk/mac-helpdesk
 /plugin install mac-printer-setup@mac-helpdesk
 /plugin install mac-dropbox-fix@mac-helpdesk
+/plugin install mac-timemachine-fix@mac-helpdesk
 ```
 
-目前透過 marketplace 安裝的有 `mac-printer-setup` 與 `mac-dropbox-fix`。另外兩個工具照各自 repo 的 README 編譯使用。
+目前透過 marketplace 安裝的有 `mac-printer-setup`、`mac-dropbox-fix` 與 `mac-timemachine-fix`。另外兩個工具照各自 repo 的 README 編譯使用。
 
 ## 結構
 
@@ -34,6 +36,7 @@ mac-helpdesk/                          # 這個 repo
 └── tools/                             # 各工具的 repo（這個 repo 不追蹤 tools/）
     ├── mac-printer-setup/
     ├── mac-dropbox-fix/
+    ├── mac-timemachine-fix/
     ├── mac-network-test/
     └── mac-trackpad-test/
 ```

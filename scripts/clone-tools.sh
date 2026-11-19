@@ -16,6 +16,7 @@ ORG="MacHelpdesk"
 TOOLS="
 mac-printer-setup
 mac-dropbox-fix
+mac-timemachine-fix
 mac-network-test
 mac-trackpad-test
 "
