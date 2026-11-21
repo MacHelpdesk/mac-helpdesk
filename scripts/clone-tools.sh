@@ -17,6 +17,7 @@ TOOLS="
 mac-printer-setup
 mac-dropbox-fix
 mac-timemachine-fix
+mac-resource-diagnose
 mac-disk-space
 mac-network-test
 mac-trackpad-test
